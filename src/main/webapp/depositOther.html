@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deposit to Another Account</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2fef2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 30px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    label {
+      font-size: 16px;
+      margin-bottom: 8px;
+      color: #333;
+      align-self: flex-start;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      width: 260px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+
+    input[type="submit"] {
+      padding: 12px 30px;
+      background-color: #66bb6a;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #4caf50;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Deposit to Another Account</h2>
+    <form action="depositOther" method="post">
+      <label for="targetAccount">Enter Account Number:</label>
+      <input type="number" name="targetAccount" id="targetAccount" required>
+
+      <label for="amount">Enter Amount:</label>
+      <input type="number" name="amount" id="amount" required>
+
+      <input type="submit" value="Deposit">
+    </form>
+  </div>
+</body>
+</html>
+

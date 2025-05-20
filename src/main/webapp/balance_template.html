@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Balance</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4fff7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .balance-box {
+      background-color: #ffffff;
+      border: 2px solid #a0d9af;
+      padding: 30px 40px;
+      border-radius: 14px;
+      box-shadow: 0 8px 18px rgba(0, 128, 0, 0.2);
+      text-align: center;
+      width: 360px;
+    }
+    h2 {
+      color: #2f855a;
+      margin-bottom: 15px;
+    }
+    .amount {
+      font-size: 2rem;
+      color: #22543d;
+      font-weight: bold;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #38a169;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    a:hover {
+      background-color: #2f855a;
+    }
+  </style>
+</head>
+<body>
+  <div class="balance-box">
+    <h2>Your Current Balance</h2>
+    <div class="amount">{{balance}}</div>
+    <a href="dashboard.html">Back to Dashboard</a>
+  </div>
+</body>
+</html>

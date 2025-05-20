@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fdf8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+    }
+
+    table {
+      margin: 0 auto;
+    }
+
+    td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    input[type="text"], input[type="password"] {
+      padding: 8px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="submit"] {
+      background-color: #66bb6a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #4caf50;
+    }
+
+    .back-link {
+      display: block;
+      margin-top: 15px;
+      color: #2e7d32;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Account Login</h2>
+    <form action="login" method="post">
+      <table>
+        <tr>
+          <td><label for="accountNum">Account Number:</label></td>
+          <td><input type="text" id="accountNum" name="accountNum" required></td>
+        </tr>
+        <tr>
+          <td><label for="pinNum">PIN:</label></td>
+          <td><input type="password" id="pinNum" name="pinNum" required></td>
+        </tr>
+      </table>
+      <input type="submit" value="Login">
+    </form>
+    <a href="index.html" class="back-link">&larr; Back to Home</a>
+  </div>
+</body>
+</html>

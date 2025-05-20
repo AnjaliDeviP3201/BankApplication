@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ATM Registration</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f9ff;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e8b57; /* Medium green for heading */
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      background-color: #fefefe;
+      font-size: 15px;
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 25px;
+      background-color: #a8dda8; /* Light soft green */
+      color: #2f4f4f;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #94c794;
+    }
+
+    .back-link {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .back-link a {
+      color: #3ba96b; /* Soft green text */
+      font-size: 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link a:hover {
+      text-decoration: underline;
+      color: #2e8b57;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Bank Account Registration</h2>
+    <form action="register" method="get">
+      <label>Name:</label>
+      <input type="text" name="name" required>
+
+      <label>Account Number:</label>
+      <input type="number" name="accountNum" required>
+
+      <label>Phone Number:</label>
+      <input type="number" name="phoneNum" required>
+
+      <label>Initial Amount:</label>
+      <input type="number" name="amount" required>
+
+      <label>Address:</label>
+      <input type="text" name="address" required>
+
+      <label>PIN:</label>
+      <input type="password" name="pin" required>
+
+      <input type="submit" value="Register">
+    </form>
+
+    <div class="back-link">
+      <a href="home.html">&larr; Back to Home</a>
+    </div>
+  </div>
+</body>
+</html>
